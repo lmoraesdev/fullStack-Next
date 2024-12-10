@@ -1,0 +1,23 @@
+{
+  "name": "fullStack-Next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lmoraesdev/fullStack-Next.git",
+  "author": "lmoraesdev <lbc_moraes@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "next start",
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "^15.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.1",
+    "@types/react": "19.0.1",
+    "typescript": "5.7.2"
+  }
+}
