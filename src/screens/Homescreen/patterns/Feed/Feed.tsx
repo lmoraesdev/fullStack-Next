@@ -1,11 +1,10 @@
+import React from "react";
 import Box from "@src/components/Box/Box";
 import Text from "@src/components/Text/Text";
-import React from "react";
 
 interface FeedProps {
   children: React.ReactNode;
 }
-
 export default function Feed({ children }) {
   return (
     <Box>
@@ -18,7 +17,7 @@ export default function Feed({ children }) {
 Feed.Header = () => {
   return (
     <Box>
-      <Text>Feed Base</Text>
+      <Text>Feed Header</Text>
     </Box>
   );
 };
@@ -26,7 +25,7 @@ Feed.Header = () => {
 Feed.Posts = () => {
   return (
     <Box>
-      <Text>Feed Base</Text>
+      <Text>Feed Posts</Text>
     </Box>
   );
 };
