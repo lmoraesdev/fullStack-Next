@@ -1,9 +1,7 @@
 {
-  "name": "fullstack-next",
+  "name": "01-fullstack-nextjs",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/lmoraesdev/fullStack-Next.git",
-  "author": "lmoraesdev <lbc_moraes@outlook.com>",
   "license": "MIT",
   "scripts": {
     "start": "next start",
@@ -11,16 +9,17 @@
     "build": "next build"
   },
   "dependencies": {
-    "@skynexui/responsive_stylesheet": "^1.11.0",
-    "@types/styled-components": "^5.1.34",
-    "next": "^15.0.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "styled-components": "^6.1.13"
+    "@skynexui/responsive_stylesheet": "^1.8.1",
+    "@types/styled-components": "^5.1.25",
+    "next": "^12.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-use-ripple": "^1.5.2",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
-    "@types/node": "22.10.1",
-    "@types/react": "19.0.1",
-    "typescript": "5.7.2"
+    "@types/node": "^18.6.3",
+    "@types/react": "^18.0.15",
+    "typescript": "^4.7.4"
   }
 }

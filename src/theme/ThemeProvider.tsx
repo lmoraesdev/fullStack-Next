@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import {
   ThemeProvider as StyledThemeProvider,
   useTheme as useThemeStyled,
-} from "styled-components";
+} from 'styled-components';
 import theme, { Theme } from "./theme";
 
 export function useTheme(): Theme {
@@ -13,5 +13,9 @@ interface ThemeProviderProps {
   children: React.ReactNode;
 }
 export default function ThemeProvider({ children }: ThemeProviderProps) {
-  return <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>;
+  return (
+    <StyledThemeProvider theme={theme}>
+      {children}
+    </StyledThemeProvider>
+  )
 }
