@@ -6,6 +6,7 @@ import Background from "./patterns/Background/Background";
 import Feed from "./patterns/Feed/Feed";
 import Footer from "./patterns/Footer/Footer";
 import Menu from "./patterns/Menu/Menu";
+import templeteConfig from "../../../config.yml";
 
 export default function HomeScreen() {
   const theme = useTheme();
@@ -16,7 +17,7 @@ export default function HomeScreen() {
       styleSheet={{
         backgroundColor: theme.colors.neutral.x000,
         flex: 1,
-        alignItems: 'center',
+        alignItems: "center",
       }}
     >
       <Background />
@@ -25,7 +26,7 @@ export default function HomeScreen() {
         <Feed.Header />
       </Feed>
       <Footer />
-      {/* 
+      {/*
       <Feed>
         <Feed.Header />
         <Text tag="h2" variant="heading1">
@@ -35,5 +36,5 @@ export default function HomeScreen() {
       </Feed>
        */}
     </Box>
-  )
+  );
 }

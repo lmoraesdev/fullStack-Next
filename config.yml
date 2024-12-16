@@ -1,0 +1,9 @@
+site:
+  title: "Portifolio de estudos"
+  description: " Site para mostrar meus portifolios de estudos"
+personal:
+  name: "Leandro Moraes"
+  avatar: "https://github.com/lmoraesdev.png"
+  socialNetworks:
+    linkedin: "https://www.linkedin.com/in/lmoraesdev"
+    github: "https://github.com/lmoraesdev"
