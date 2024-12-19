@@ -9,7 +9,8 @@ export interface Post {
     excerpt: string;
     tags: string[];
   };
-  slug: string; // Como se fosse o ID do post
+  image?: string;
+  slug: string; // Como se fosse o ID do Post
   title: string;
   content: string;
 }
@@ -19,7 +20,6 @@ export default function PostsService() {
     async getAll(): Promise<Post[]> {
       const PATH_POSTS = path.resolve(".", "_data", "posts");
       const postFiles = await fs.readdir(PATH_POSTS, { encoding: "utf-8" });
-
       const postsPromise = postFiles.map(async (postFileName) => {
         const filePath = path.join(PATH_POSTS, postFileName);
         const postFile = await fs.readFile(filePath, { encoding: "utf-8" });
@@ -28,20 +28,18 @@ export default function PostsService() {
         const post: Post = {
           metadata: {
             date: new Date(data.date).toISOString(),
-            url: data.url,
             excerpt: data.excerpt,
             tags: data.tags,
+            url: data.url,
           },
-          content,
-          slug: postFileName.replace(".md", ""),
+          image: data.image || "",
           title: data.title,
+          slug: postFileName.replace(".md", ""),
+          content,
         };
-
         return post;
       });
-
       const posts = Promise.all(postsPromise);
-
       return posts;
     },
   };

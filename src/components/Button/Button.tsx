@@ -22,16 +22,16 @@ export default function Button({
   return (
     <ButtonBase
       styleSheet={{
-        alignSelf: 'flex-start',
-        alignItems: 'center',
-        justifyContent: 'center',
+        alignSelf: "flex-start",
+        alignItems: "center",
+        justifyContent: "center",
         // [Color + Variant]
         ...colorVariantBy(theme, colorVariant, variant),
         // [Size]
         ...buttonSize[size],
         // [FullWidth]
         ...(fullWidth && {
-          alignSelf: 'initial',
+          alignSelf: "initial",
         }),
         ...styleSheet,
       }}
@@ -43,9 +43,9 @@ export default function Button({
 
 Button.defaultProps = {
   fullWidth: false,
-  size: 'md',
-  variant: 'contained',
-  colorVariant: 'primary',
-}
+  size: "md",
+  variant: "contained",
+  colorVariant: "primary",
+};
 
 Button.Base = ButtonBase;

@@ -1,5 +1,6 @@
 ---
 date: 2024-12-17
+image: https://images.adsttc.com/media/images/5e48/0d44/6ee6/7ec3/2000/006e/slideshow/IMG_0807-HDR-2.jpg?1581780285
 title: "Como Tudo Começou: 21 Dias que Mudaram Minha Vida"
 url: ""
 excerpt: "Uma jornada de 21 dias, pandemia, desafios e uma comunidade incrível. Como a 42SP me ajudou a reencontrar meu caminho."
