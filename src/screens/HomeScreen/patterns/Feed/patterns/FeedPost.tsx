@@ -127,7 +127,8 @@ export function FeedPost({
         >
           <Image
             styleSheet={{
-              width: "100%",
+              width: "50%",
+              height: "100%",
               marginTop: "29px",
               borderRadius: "12px",
             }}
