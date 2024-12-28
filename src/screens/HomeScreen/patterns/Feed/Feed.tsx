@@ -78,7 +78,7 @@ Feed.Header = () => {
               fullWidth
               colorVariant="primary"
               size="xl"
-              href="/newsletter"
+              href="./newsletter"
             >
               Newsletter
             </Button>
@@ -93,7 +93,12 @@ Feed.Header = () => {
               display: { xs: "flex", md: "none" },
             }}
           >
-            <Button fullWidth colorVariant="primary" size="xs" href="/">
+            <Button
+              fullWidth
+              colorVariant="primary"
+              size="xs"
+              href="/newsletter"
+            >
               Newsletter
             </Button>
             <Button fullWidth colorVariant="neutral" size="xs" href="/">

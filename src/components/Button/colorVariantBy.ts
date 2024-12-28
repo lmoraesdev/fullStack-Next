@@ -1,7 +1,13 @@
 import { Theme } from "@src/theme/theme";
 
-export type ColorVariant = 'primary' | 'accent' | 'positive' | 'negative' | 'warning' | 'neutral';
-export type Variant = 'ghost' | 'contained' | 'outlined';
+export type ColorVariant =
+  | "primary"
+  | "accent"
+  | "positive"
+  | "negative"
+  | "warning"
+  | "neutral";
+export type Variant = "ghost" | "contained" | "outlined";
 
 function createVariant(theme: Theme, colorVariant) {
   return {
@@ -16,8 +22,8 @@ function createVariant(theme: Theme, colorVariant) {
       },
     },
     outlined: {
-      border: '1px solid',
-      backgroundColor: 'transparent',
+      border: "1px solid",
+      backgroundColor: "transparent",
       color: theme.colors[colorVariant].x500,
       borderColor: theme.colors[colorVariant].x400,
       hover: {
@@ -28,7 +34,7 @@ function createVariant(theme: Theme, colorVariant) {
       },
     },
     ghost: {
-      backgroundColor: 'transparent',
+      backgroundColor: "transparent",
       color: theme.colors[colorVariant].x500,
       hover: {
         backgroundColor: theme.colors[colorVariant].x050,
@@ -43,12 +49,12 @@ function createVariant(theme: Theme, colorVariant) {
 export function colorVariantBy(theme: Theme, colorVariant, variant) {
   const styles = {
     // [primary]
-    primary: createVariant(theme, 'primary'),
-    accent: createVariant(theme, 'accent'),
-    positive: createVariant(theme, 'positive'),
-    negative: createVariant(theme, 'negative'),
-    warning: createVariant(theme, 'warning'),
-    neutral: createVariant(theme, 'neutral'),
+    primary: createVariant(theme, "primary"),
+    accent: createVariant(theme, "accent"),
+    positive: createVariant(theme, "positive"),
+    negative: createVariant(theme, "negative"),
+    warning: createVariant(theme, "warning"),
+    neutral: createVariant(theme, "neutral"),
   };
 
   return styles[colorVariant][variant];
