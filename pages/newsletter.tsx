@@ -111,6 +111,14 @@ export default function NewsletterScreen() {
               return;
             }
             alert("Cadastrado com sucesso");
+
+            fetch("/api/newsletter/optin", {
+              method: "POST",
+              headers: { "content-type": "application/json" },
+              body: JSON.stringify(form.values),
+            }).then(async (respostaDoServidor) => {
+              console.log(await respostaDoServidor.json());
+            });
           }}
         >
           <NewsLetterTextField
